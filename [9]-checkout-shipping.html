@@ -10,6 +10,9 @@
     <link rel='stylesheet' href='css/colours.css'>
     <link rel='stylesheet' href='css/layout.css'>
     <title>JB Hi-Fi: Home</title>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="scripts/checkout.js"></script>
 </head>
 
 <body>
@@ -30,20 +33,21 @@
 
     <!-- Navigation Bar -->
     <div class="topnav">
-        <div class='navelement'><h5>Home</h5></div>
-        <div class='navelement'><h5>About</h5></div>
+        <div class='navelement'><h5 class='navelement'>Home</h5></div>
+        <div class='navelement'><h5 class='navelement'>About</h5></div>
         <div class='navelement'><a href='[2]-category_page.html'><h5 class='navelement'>Shop</h5></a></div>
-        <div class='navelement'><h5>Locate Us</h5></div>
+        <div class='navelement'><h5 class='navelement'>Locate Us</h5></div>
     </div>
 
-    <!-- Shopping Cart & Order Summary -->
+    <!-- Shopping Cart (whited) & Order Summary -->
+    
     <div class='cart-overview'>
         <div class='checkout-shopping-cart'>
+            <div class=checkout-white-box></div>
             <h1>Shopping Cart</h1>
             <div class='cart-items'>
                 <div class='cart-item'>
                     <img class='img' src='images/lorem70d.jpg'>
-                    
                     <div class='cart-details'>
                         <h3>Lorem 70D</h3>
                         <h4>$699</h4>
@@ -67,29 +71,49 @@
         </div>
 
         <div class='order-summary'>
-            <h1>Order Summary</h1>
-            <table class='order-table'>
-                <tr>
-                    <th class='table-item'>Items</th>
-                    <th>Price</th>
-                </tr>
-                <tr>
-                    <td>1 x Lorem 70D</td>
-                    <td class='table-price'>$699</td>
-                </tr>
-            </table>
-
-            <table class='total-table'>
-                <th class='total-title'>Total (before shipping)</th>
-                <th class='total-price'>AUD$699</th>
-            </table>
-
-            <div class='checkout-button'> <a href='[8]-checkout-payment.html'>
-                <h6>Checkout</h6>
-            </div>
-        </a>
+            <div class='payment-info'>
+                <h1>Payment Info</h1>
+                <div class='payment-method'>
+                    <h2 class='payment-title'>Payment Method</h2>
+                    <select name='shipping-method' id='shipping-method'>
+                        <option value='20'>Paypal</option>
+                        <option value='40'>Credit Card</option>
+                    </select>
+                </div>
+                <div class='payment-name'>
+                    <h2>Name on Card</h2>
+                    <input type='text'>
+                </div>
+                <div class='payment-card-num'>
+                    <h2>Card Number</h2>
+                    <div class='credit-card-num'>
+                        <input type='text' id='card1'>
+                        <input type='text' id='card2'>
+                        <input type='text' id='card3'>
+                        <input type='text' id='card4'>
+                    </div>
+                </div>
+                <div class='credit-card-info'>
+                    <div class='card-expiry-date'>
+                        <h2>Expiry Date</h2>
+                        <div class='date'>
+                            <input type='text' id='expirydate1'>
+                            <p>/</p>
+                            <input type='text' id='expirydate2'>
+                        </div>
+                    </div>
+                    <div class='cvc'>
+                        <h2>CVC</h2>
+                        <input type='text' id='cvc'>
+                        </div>
+                    </div>
+                </div>
+                <div class='shipping checkout'>
+                    <input type='button' class='shipping' onclick="validatePayment()" value="Check Out">
+                </div>
+            </div>            
         </div>
-    </div>
+    </body>
 
     <!-- Footer -->
     <footer>

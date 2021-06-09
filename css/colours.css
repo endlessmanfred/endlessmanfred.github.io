@@ -202,19 +202,15 @@ footer h3 {
     background-color: #888888;
 }
 
-.order-summary .checkout {
-    background-color: #484848;
-}
-
-.order-summary .checkout h6 {
-    color: white;
-}
-
 .order-summary .shipping {
     background-color: #484848;
 }
 
 .order-summary .shipping h6 {
+    color: white;
+}
+
+.checkout-button h6 {
     color: white;
 }
 

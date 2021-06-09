@@ -218,6 +218,16 @@ footer h3 {
     font-size: 0.8rem;
 }
 
+.shipping {
+    color: white;
+}
+
+/* Order Success */
+.order-success p {
+    font-family: 'Gilroy Light';
+    font-size: 0.8rem;
+}
+
 
 
 @media only screen and (max-width: 800px) {

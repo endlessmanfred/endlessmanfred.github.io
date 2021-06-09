@@ -689,6 +689,22 @@ footer h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+}
+
+.checkout-button {
+    min-width: 150px;
+    height: 70px;
+    background-color: #484848;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-button h6 {
+    text-align: center;
+    margin: 30px;
 }
 
 .order-summary h1 {
@@ -731,21 +747,6 @@ footer h3 {
 
 .order-summary .total-table .total-title {
     width: 70%;
-}
-
-.order-summary .checkout {
-    height: 50px;
-    width: 150px;
-    margin: 20px;
-    float: right;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.order-summary .checkout h6 {
-    margin: 0;
 }
 
 .order-summary .payment-info h1 {
@@ -835,10 +836,26 @@ footer h3 {
     width: 100%;
 }
 
+.address-line .address-title {
+    margin-bottom: 10px;
+}
+
+.address-line {
+    width: 90%;
+}
+
+.address-line input {
+    width: 100%;
+}
+
+.address-input-3 {
+    width: 40px;
+}
+
+
 .order-summary .shipping {
     height: 50px;
     width: 300px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -846,9 +863,36 @@ footer h3 {
     float: right;
 }
 
+.shipping-method {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#shipping-method {
+    width: 100%;
+}
+
 .order-summary .shipping h6 {
     margin: 0;
 }
+
+/* Order Success */
+.order-success {
+    width: 90%;
+    padding: 50px 0 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-success h1 {
+    text-transform: none;
+    font-size: 1.8rem;
+}
+
 
 
 
@@ -996,6 +1040,7 @@ footer h3 {
         display: flex;
         flex-direction: column;
     }
+
 
     /* Footer */
     .footer {

@@ -10,6 +10,9 @@
     <link rel='stylesheet' href='css/colours.css'>
     <link rel='stylesheet' href='css/layout.css'>
     <title>JB Hi-Fi: Home</title>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="scripts/checkout.js"></script>
 </head>
 
 <body>
@@ -36,7 +39,7 @@
         <div class='navelement'><h5 class='navelement'>Locate Us</h5></div>
     </div>
 
-    <!-- Shopping Cart (whited) & Order Summary -->
+    <!-- Shopping Cart (whited) -->
     
     <div class='cart-overview'>
         <div class='checkout-shopping-cart'>
@@ -67,54 +70,37 @@
             </div>
         </div>
 
+        <!-- Order Summary -->                    
         <div class='order-summary'>
             <div class='payment-info'>
-                <h1>Payment Info</h1>
-                <div class='payment-method'>
-                    <h2 class='payment-title'>Payment Method</h2>
-                    <div class='payment'>
-                        <img src='images/creditcard.png'/>
-                        <p>Credit Card</p>
-                    </div>
-                    <div class='payment'>
-                        <img src='images/Paypal-logo.png' />
-                        <p>Paypal</p>
-                    </div>
-                </div>
-                <div class='payment-name'>
-                    <h2>Name on Card</h2>
-                    <input type='text'>
-                </div>
-                <div class='payment-card-num'>
-                    <h2>Card Number</h2>
-                    <div class='credit-card-num'>
-                        <input type='text'>
-                        <input type='text'>
-                        <input type='text'>
-                        <input type='text'>
-                    </div>
-                </div>
-                <div class='credit-card-info'>
-                    <div class='card-expiry-date'>
-                        <h2>Expiry Date</h2>
-                        <div class='date'>
-                            <input type='text'>
-                            <p>/</p>
-                            <input type='text'>
-                        </div>
-                    </div>
-                    <div class='cvc'>
-                        <h2>CVC</h2>
-                        <input type='text'>
-                        </div>
-                    </div>
-                </div>
-                <div class='shipping'>
-                    <h6>Proceed to Shipping</h6>
-                </div>
-            </div>            
+                <h1>Shipping</h1>
+            </div>
+
+            <div class='address-line'>
+                <h2 class='address-title'>Address Line 1</h2>
+                <input class='address-input-1' type='text' id="address-input-1">
+            </div>
+
+            <div class='address-line address-line-2'>
+                <h2 class='address-title'>Address Line 2 (optional)</h2>
+                <input type='text'>
+            </div>
+
+            <div class='address-line address-line-postal'>
+                <h2 class='address-title'>Postal Code</h2>
+                <input class='address-input-3' type='text' id="address-input-postal-code">
+            </div>
+
+            <div class='shipping-method'>
+                <h2 class='address-title'>Choose Shipping Method:</h2>
+                <select name='shipping-method' id='shipping-method'>
+                    <option value='20'>Standard Mail (+AUD$20)</option>
+                    <option value='40'>UPS Express (+AUD$40)</option>
+                </select>
+            </div>     
+            <input type='button' class='shipping' onclick="validateAddress()" value="Proceed to Payment">
         </div>
-    </body>
+    </div>
 
     <!-- Footer -->
     <footer>
