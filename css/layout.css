@@ -189,6 +189,7 @@ header .shopping-cart {
     flex-wrap: wrap;
     position: relative;
     justify-content: space-around;
+    align-items: center;
 }
 
 .product-card {
