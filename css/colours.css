@@ -1,0 +1,232 @@
+/* Header */
+header {
+    background-color: #FFFF00;
+}
+
+
+/* Navigation Bar */
+.topnav {
+    background-color: #484848;
+}
+
+.navelement {
+    color: white;
+}
+
+.navelement:hover {
+    color: #efefef;
+}
+
+/* Banner */
+.banner {
+    background-image: url(../images/Pocket\ Camera\ Banner.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-text {
+    color: white;
+}
+
+.product-banner-group {
+    background-size: cover;
+    background-position: center;
+}
+
+.product-banners .small-1 {
+    background-image: url(../images/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.product-banners .small-2 {
+    background-size: cover;
+    background-position: center;
+    background-color: #484848;
+}
+
+.product-banners .small-3 {
+    background-image: url(../images/jakob-owens-FKyHyNowp-4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.product-banners .small-4 {
+    background-image: url(../images/landon-martin-TQWvE-pqoeU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.product-banners .large {
+    background-image: url(../images/alex-azabache-riLA6oy6ekM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.product-banners h1 {
+    color: white;
+}
+
+.product-banners .large h1 {
+    color: white;
+}
+
+
+/* Cateogries */
+.categories {
+    background-color: #484848;
+}
+
+.categories h1 {
+    color: white;
+}
+
+.icon h2 {
+    color: white;
+}
+
+
+/* Featured Products */
+.featured {
+    background-color:#cecece;
+}
+
+.product-card {
+    background-color: #FFFF00;
+}
+
+.product-card .img {
+    background-color: white;
+}
+
+.price h6 {
+    color: red;
+}
+
+.cart {
+    background-color: black;
+}
+
+
+/* Footer */
+footer {
+    background-color:#484848;
+}
+
+footer h3 {
+    color: white;
+}
+
+
+/* Search Listings */
+.filter {
+    background-color: #484848;
+}
+
+.filter-elements h2 {
+    color: white;
+}
+
+
+/* Product List */
+.product-list .product-card .cart{
+    background-color: black;
+}
+
+
+/* Mini Product Listing */
+.add-to-cart {
+    background-color: #484848;
+}
+
+.mini-product-details .add-to-cart h5 {
+    color: white;
+}
+
+
+/* Product Details */
+.details .colour .colour_box.grey {
+    background-color: #484848;
+}
+
+.details .colour .colour_box.white {
+    background-color: white;
+}
+
+.details .colour .colour_box.pink {
+    background-color: pink;
+}
+
+.details .colour .colour_box.blue {
+    background-color: #1753E1;
+}
+
+.details .add-to-cart h5 {
+    color: white;
+}
+
+.details .list-description .list-description-description {
+    background-color: #484848;
+    color: white
+}
+
+.related-products {
+    color: #484848;
+}
+
+
+/* Shopping Cart */
+.checkout-white-box {
+    background-color: white;
+}
+
+.cart-item {
+    background-color:#FFFF00;
+}
+
+.multiplier .math {
+    background-color: #484848;
+}
+
+.multiplier .math p {
+    color: white;
+}
+
+.trash {
+    background-color: #484848;
+}
+
+
+/* Order Summary & Payment Info  */
+.order-summary {
+    background-color: #888888;
+}
+
+.order-summary .checkout {
+    background-color: #484848;
+}
+
+.order-summary .checkout h6 {
+    color: white;
+}
+
+.order-summary .shipping {
+    background-color: #484848;
+}
+
+.order-summary .shipping h6 {
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    /* Product Cards */
+    .product-card .img {
+        background-color: white;
+    }
+
+    .checkout-white-box {
+        background-color: white;
+    }
+}

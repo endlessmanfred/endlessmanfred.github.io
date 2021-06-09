@@ -1,0 +1,246 @@
+/* Imported Fonts */
+@font-face {
+    font-family: 'Gilroy Light';
+    src: url(../fonts/Gilroy-Light.woff2) format('woff2');
+    src: url(../fonts/Gilroy-Light.woff) format('woff');
+    src: url(../fonts/Gilroy-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-Extrabold.woff2) format('woff2');
+    src: url(../fonts/Gilroy-Extrabold.woff) format('woff');
+    src: url(../fonts/Gilroy-Extrabold.ttf) format('truetype');
+}
+
+/* Universal Styles */
+* {
+    font-family: 'Gilroy', 'Century Gothic', sans-serif;
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Navigation Bar */
+.navelement {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+/* Banner */
+.banner-text {
+    font-size: 2.5rem;
+    letter-spacing: 0.05em;
+    text-transform:none;
+}
+
+.product-banners h1 {
+    font-size: 1rem;
+    text-transform: none;
+}
+
+.product-banners .large h1 {
+    font-size: 2rem;
+    text-transform: none;
+}
+
+
+/* Cateogries */
+.icon h2 {
+    font-family: 'Gilroy Light';
+    font-size: 10px;
+    text-align: center;
+}
+
+
+/* Featured Products */
+.price h6 {
+    font-family: 'Gilroy Light';
+    font-size: 0.6rem;
+    text-decoration: line-through;
+}
+
+.price h4 {
+    font-size: 1.3rem;
+}
+
+.product-card h3 {
+    font-size: 0.8rem;
+}
+
+
+/* Footer */
+footer h3 {
+    font-size: 0.8rem;
+    font-family: 'Gilroy Light';
+}
+
+
+/* Product Listings */
+.category-description h1 {
+    font-size: 2rem;
+}
+
+.category-description h1 {
+    text-transform: none;
+    text-align: center;
+}
+
+.category-description p {
+    font-family: 'Gilroy Light';
+    text-transform: none;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* Search Listings */
+.search-description h1 {
+    text-transform: none;
+    font-size: 2rem;
+}
+
+.filter-elements h2 {
+    font-family: 'Gilroy Light';
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+
+/* Mini Product Listing */
+.mini-product-details h1 {
+    font-size: 2rem;
+}
+
+.mini-product-details h4 {
+    font-size: 1.5rem;
+}
+
+.mini-product-details p {
+    font-family: 'Gilroy Light';
+    font-size: 0.8rem;
+}
+
+.mini-product-details h1 {
+    font-size: 2rem;
+}
+
+
+/* Product Details */
+.details h1{
+    font-size: 2rem;
+}
+
+.details h4 {
+    font-size: 1.2rem;
+}
+
+.details .options p {
+    font-family: 'Gilroy Light';
+    font-size: 0.8rem;
+}
+
+.details .add-to-cart h5 {
+    text-align: center;
+}
+
+.details .list-description p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.details .description p {
+    font-family: 'Gilroy Light';
+    font-size: 0.8rem;
+}
+
+.related-products {
+    font-size: 1.8rem;
+    text-transform: none;
+    text-align: center;
+}
+
+
+/* Shopping Cart */
+.checkout-shopping-cart h1 {
+    text-transform: none;
+    font-size: 1.8rem;
+}
+
+.cart-details h3 {
+    font-size: 1rem;
+}
+
+.cart-details h4 {
+    font-size: 1.4rem;
+}
+
+.multiplier .math p {
+    font-family: 'Gilroy Light';
+}
+
+.multiplier .quantity p {
+    font-family: 'Gilroy Light';
+}
+
+.order-summary h1 {
+    text-transform: none;
+    font-size: 1.8rem;
+}
+
+.order-summary .order-table th {
+    text-align: left;
+}
+
+.order-summary .order-table .table-item {
+    text-align: left;
+}
+
+.order-summary .order-table td {
+    font-family: 'Gilroy Light';
+    text-align: left;
+}
+
+.order-summary .total-table th {
+    text-align: left;
+}
+
+.order-summary .total-table .total-title {
+    font-size: 0.7rem;
+    text-align: left;
+}   
+
+.payment-method p {
+    font-family: 'Gilroy Light';
+    font-size: 0.8rem;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+    /* Navigation Bar */
+    .navelement h5 {
+        text-align: center;
+    }
+
+
+    /* Product Cards */
+    .product-list .product-card h3 {
+        font-size: 1.2em;
+    }
+
+    .product-card h3 {
+        font-size: 1.5em;
+    }
+
+
+
+
+
+
+
+}

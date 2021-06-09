@@ -1,23 +1,4 @@
-@font-face {
-    font-family: 'Gilroy Light';
-    src: url(../fonts/Gilroy-Light.woff2) format('woff2');
-    src: url(../fonts/Gilroy-Light.woff) format('woff');
-    src: url(../fonts/Gilroy-Light.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url(../fonts/Gilroy-Extrabold.woff2) format('woff2');
-    src: url(../fonts/Gilroy-Extrabold.woff) format('woff');
-    src: url(../fonts/Gilroy-Extrabold.ttf) format('truetype');
-}
-
 /* Universal Styles */
-* {
-    font-family: 'Gilroy', 'Century Gothic', sans-serif;
-    font-size: 25px;
-}
-
 html {
     padding: 0;
     margin: 0;
@@ -27,22 +8,16 @@ body {
     margin: 0;
 }
 
-h1 {
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    margin: 0;
-}
-
 /* Header */
 header {
     height: 80px;
     width: auto;
-    background-color: #FFFF00;
 }
 
 .header-elements {
-    width: 90%;
     margin: 0 auto;
+    width: 90%;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,27 +36,24 @@ header .search-icon {
 
 header .shopping-cart {
     height: 40px;
+    margin: 20px;
     position: inline;
     float: right;
-    margin: 20px;
 }
 
 /* Navigation Bar */
 .topnav {
     width: 100%;
     height: 60px;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #484848;
 }
 
 .navelement {
-    color: white;
     padding: 0 9px;
     margin: 0 20px;
-    font-size: 0.7rem;
-    text-transform: uppercase;
 }
 
 /* Banner */
@@ -89,27 +61,18 @@ header .shopping-cart {
     width: 90%;
     max-width: 1200px;
     height: 450px;
-    background-image: url(../images/Pocket\ Camera\ Banner.jfif);
-    background-size: cover;
-    background-position: center;
     margin: 50px auto;
 }
 
 .banner-text {
-    color: white;
-    font-size: 2.5rem;
-    letter-spacing: 0.05em;
     width: 56%;
-    position: absolute;
     margin: 30px 70px;
-    text-transform:none;
+    position: absolute;
 }
 
 .product-banner-group {
     width: 90%;
     max-width: 1200px;
-    background-size: cover;
-    background-position: center;
     margin: 50px auto;
 }
 
@@ -117,6 +80,7 @@ header .shopping-cart {
     max-width: 1200px;
     height: 450px;
     margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(2, 50%);
@@ -125,9 +89,6 @@ header .shopping-cart {
 .product-banners .small-1 {
     width: 90%;
     height: 90%;
-    background-image: url(../images/banner1.jpg);
-    background-size: cover;
-    background-position: center;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
 }
@@ -135,9 +96,6 @@ header .shopping-cart {
 .product-banners .small-2 {
     width: 90%;
     height: 90%;
-    background-color: #484848;
-    background-size: cover;
-    background-position: center;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
 }
@@ -145,9 +103,6 @@ header .shopping-cart {
 .product-banners .large {
     width: 95%;
     height: 95%;
-    background-image: url(../images/alex-azabache-riLA6oy6ekM-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
     grid-row: 1 / 3;
     grid-column: 2 / 4;
 }
@@ -155,9 +110,6 @@ header .shopping-cart {
 .product-banners .small-3 {
     width: 95%;
     height: 90%;
-    background-image: url(../images/jakob-owens-FKyHyNowp-4-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
     grid-row: 1 / 2;
     grid-column: 4 / 5;
 }
@@ -165,26 +117,17 @@ header .shopping-cart {
 .product-banners .small-4 {
     width: 95%;
     height: 90%;
-    background-image: url(../images/landon-martin-TQWvE-pqoeU-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
     grid-row: 2 / 3;
     grid-column: 4 / 5;
 }
 
 .product-banners h1 {
     width: 300%;
-    font-size: 1rem;
-    text-transform: none;
-    color: white;
     padding: 10px;
 }
 
 .product-banners .large h1 {
     width: 300%;
-    font-size: 2rem;
-    text-transform: none;
-    color: white;
     padding: 20px;
 }
 
@@ -193,15 +136,12 @@ header .shopping-cart {
     width: 90%;
     max-width: 1200px;
     height: 200px;
-    background-color: #484848;
     margin: 50px auto;
     align-items: center;
 }
 
 .categories h1 {
-    color: white;
     padding: 10px 20px 0;
-
 }
 
 .categories-icons {
@@ -222,10 +162,6 @@ header .shopping-cart {
 }
 
 .icon h2 {
-    font-family: 'Gilroy Light';
-    font-size: 10px;
-    color: white;
-    text-align: center;
     margin: 5px auto;
 }
 
@@ -234,11 +170,11 @@ header .shopping-cart {
     margin: 0 auto;
 }
 
+
 /* Featured Products */
 .featured {
     width: 90%;
     max-width: 1200px;
-    background-color:#cecece;
     margin: 0 auto 50px;
 }
 
@@ -248,6 +184,7 @@ header .shopping-cart {
 
 .product-cards {
     margin: 0;
+
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -258,7 +195,7 @@ header .shopping-cart {
     max-width: 230px;
     max-height: 500px;
     margin: 0 30px 30px;
-    background-color: #FFFF00;
+
     box-shadow: 5px 10px 10px #888888;
 }
 
@@ -266,14 +203,12 @@ header .shopping-cart {
     width: 100%;
     height: 180px;
     object-fit:cover;
-    background-color: white;
 }
 
 .product-card h3 {
     margin: 0;
     height: 63.3px;
     padding: 7px 10px;
-    font-size: 0.8rem;
 }
 
 .price {
@@ -285,27 +220,22 @@ header .shopping-cart {
 .price h4 {
     margin: 20px 0 10px 0;
     padding: 0 10px;
-    font-size: 1.3rem;
 }
 
 .price h6 {
-    font-family: 'Gilroy Light';
-    font-size: 0.6rem;
-    color: red;
     padding: 0 3px;
-    text-decoration: line-through;
     display: inline;
 }
 
 .cart {
     width: 50px;
     height: 50px;
-    background-color: black;
-    justify-content: center;
+    margin: 5px;
+    float: right;
+
     display: flex;
     align-items: center;
-    float: right;
-    margin: 5px;
+    justify-content: center;
 }
 
 .cart-icon {
@@ -317,7 +247,7 @@ header .shopping-cart {
 /* Footer */
 footer {
     height: 130px;
-    background-color:#484848;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -326,6 +256,7 @@ footer {
 .footer-contents {
     width: 90%;
     max-width: 1200px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -337,12 +268,10 @@ footer {
 }
 
 footer h3 {
-    font-size: 0.8rem;
     display: inline;
-    font-family: 'Gilroy Light';
-    color: white;
     letter-spacing: 0.04rem;
 }
+
 
 /* Product Listings */
 .category-description {
@@ -351,18 +280,6 @@ footer h3 {
     margin: 50px auto;
 }
 
-.category-description h1 {
-    text-transform: none;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.category-description p {
-    font-family: 'Gilroy Light';
-    text-transform: none;
-    font-size: 0.8rem;
-    text-align: center;
-}
 
 /* Search Listings */
 .search-description {
@@ -371,17 +288,12 @@ footer h3 {
     margin: 50px auto;
 }
 
-.search-description h1 {
-    text-transform: none;
-    font-size: 2rem;
-}
-
 .filter {
     width: 90%;
     max-width: 1200px;
     margin: 50px auto;
-    background-color: #484848;
     height: 50px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -396,6 +308,7 @@ footer h3 {
 .filter-elements {
     height: 40px;
     width: 90%;
+
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
@@ -403,11 +316,7 @@ footer h3 {
 }
 
 .filter-elements h2 {
-    color: white;
-    font-family: 'Gilroy Light';
-    font-size: 0.7rem;
     padding: 10px 40px;
-    text-align: center;
 }
 
 /* Product List */
@@ -431,25 +340,27 @@ footer h3 {
 .product-list .product-card .cart{
     width: 50px;
     height: 50px;
-    background-color: black;
-    justify-content: center;
     position: relative;
     bottom: 33px;
+    
     display: flex;
+    justify-content: center;
     align-items: center;
     float: right;
     margin: 5px;
 }
+
 
 /* Mini Product Listing */
 .mini-product-listing {
     width: 90%;
     max-width: 1200px;
     height: 450px;
-    border: black;
-    border-width: 1px;
+
+    border: 1px black;
     border-style: solid;
     margin: 0 auto 30px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -469,18 +380,11 @@ footer h3 {
 }
 
 .mini-product-details h1 {
-    font-size: 2rem;
     margin: 14px 0 0;
 }
 
 .mini-product-details h4 {
-    font-size: 1.5rem;
     margin: 14px 0 0;
-}
-
-.mini-product-details p {
-    font-family: 'Gilroy Light';
-    font-size: 0.8rem;
 }
 
 .mini-product-details .buttons {
@@ -494,6 +398,7 @@ footer h3 {
     padding: 7px 18px;
     border: 1px black;
     border-style: solid;
+
     display: flex;
     align-items: center;
     margin: 0 10px;
@@ -501,42 +406,36 @@ footer h3 {
 
 .add-to-cart {
     padding: 7px 15px;
-    background-color: #484848;
+
     display: flex;
     align-items: center;
     margin: 0 20px 0 10px;
+}
+
+.mini-product-details h1 {
+    margin: 14px 20px;
+}
+
+.mini-product-details h4 {
+    margin: 5px 20px;
 }
 
 .mini-product-details h5 {
     margin: 0;
 }
 
-.mini-product-details .add-to-cart h5 {
-    color: white;
-}
-
-.mini-product-details h1 {
-    font-size: 2rem;
-    margin: 14px 20px;
-}
-
-.mini-product-details h4 {
-    font-size: 1.5rem;
-    margin: 5px 20px;
-}
-
 .mini-product-details p {
-    font-family: 'Gilroy Light';
     margin: 5px 20px;
 }
 
 .mini-product-details .buttons {
-    width: 80%;
-    display: flex;
-    justify-content: flex-end;
     height: 60px;
     width: 90%;
     margin: 40px;
+    width: 80%;
+
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -545,6 +444,7 @@ footer h3 {
     margin: 50px auto 0;
     width: 90%;
     max-width: 1200px;
+
     display: flex;
 }
 
@@ -555,22 +455,19 @@ footer h3 {
 }
 
 .product-details .details {
+    margin-left: 40px;
+
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
-}
-
-.details h1{
-    font-size: 2rem;
 }
 
 .details h4 {
-    font-size: 1.2rem;
     margin: 0;
 }
 
 .details .colour {
     margin-top: 50px;
+
     display: flex;
     align-items: center;
 }
@@ -589,7 +486,6 @@ footer h3 {
 .details .colour .colour_box.grey {
     border: 1px black;
     border-style: solid;
-    background-color: #484848;
 }
 
 .details .colour .colour_box.white {
@@ -600,17 +496,16 @@ footer h3 {
 .details .colour .colour_box.pink {
     border: 1px black;
     border-style: solid;
-    background-color: pink;
 }
 
 .details .colour .colour_box.blue {
     border: 1px black;
     border-style: solid;
-    background-color: #1753E1;
 }
 
 .details .options {
     margin-top: 50px;
+
     display: flex;
     align-items: center;
 }
@@ -627,8 +522,6 @@ footer h3 {
 }
 
 .details .options p {
-    font-family: 'Gilroy Light';
-    font-size: 0.8rem;
     margin: 10px;
 }
 
@@ -637,17 +530,14 @@ footer h3 {
     width: 150px;
     margin-top: 50px;
     float: right;
+
     display: flex;
     justify-content: center;
 }
 
-.details .add-to-cart h5 {
-    color: white;
-    text-align: center;
-}
-
 .details .product-information {
     margin: 50px 0;
+
     display: flex;
     flex-direction: column;
 }
@@ -663,13 +553,6 @@ footer h3 {
     padding: 10px;
     border: 1px #484848;
     border-style: solid;
-    font-size: 0.8rem;
-    text-align: center;
-}
-
-.details .list-description .list-description-description {
-    background-color: #484848;
-    color: white
 }
 
 .details .description {
@@ -679,27 +562,20 @@ footer h3 {
 }
 
 .details .description p {
-    font-family: 'Gilroy Light';
-    font-size: 0.8rem;
     margin: 0;
     padding: 12px;
 }
 
 .related-products {
-    font-size: 1.8rem;
-    color: #484848;
-    text-transform: none;
-    text-align: center;
     margin-bottom: 30px;
 }
 
 /* Shopping Cart */
-
 .checkout-white-box {
     height: 100%;
     width: 60%;
+
     position: absolute;
-    background-color: white;
     opacity: 70%;
     z-index: 60;
 }
@@ -715,13 +591,12 @@ footer h3 {
 }
 
 .checkout-shopping-cart h1 {
-    text-transform: none;
-    font-size: 1.8rem;
     margin: 10px 0 10px 20px;
 }
 
 .cart-items {
     margin: 30px;
+
     display: flex;
     flex-wrap: wrap;
 }
@@ -729,7 +604,6 @@ footer h3 {
 .cart-item {
     display: flex;
     width: 400px;
-    background-color:#FFFF00;
     box-shadow: 5px 10px 10px #888888;
 }
 
@@ -745,12 +619,10 @@ footer h3 {
 }
 
 .cart-details h3 {
-    font-size: 1rem;
     margin: 15px 10px;
 }
 
 .cart-details h4 {
-    font-size: 1.4rem;
     margin: 15px 10px;
 }
 
@@ -763,9 +635,9 @@ footer h3 {
 .multiplier .math {
     width: 30px;
     height: 30px;
-    background-color: #484848;
     border: 1px #484848;
     border-style: solid;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -773,8 +645,6 @@ footer h3 {
 
 .multiplier .math p {
     margin: 0;
-    font-family: 'Gilroy Light';
-    color: white;
 }
 
 .multiplier .quantity {
@@ -782,6 +652,7 @@ footer h3 {
     height: 30px;
     border: 1px #484848;
     border-style: solid;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -789,13 +660,12 @@ footer h3 {
 
 .multiplier .quantity p {
     margin: 0;
-    font-family: 'Gilroy Light';
 }
 
 .trash {
     height: 40px;
     width: 40px;
-    background-color: #484848;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -809,20 +679,19 @@ footer h3 {
     height: auto;
 }
 
+
 /* Order Summary & Payment Info  */
 .order-summary {
     width: 40%;
     max-width: 500px;
-    background-color: #888888;
     height: 650px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .order-summary h1 {
-    text-transform: none;
-    font-size: 1.8rem;
     margin: 10px 0 10px 20px;
     min-height: 0;
     flex-grow: 1;
@@ -837,18 +706,14 @@ footer h3 {
 }
 
 .order-summary .order-table th {
-    text-align: left;
     height: 20%;
 }
 
 .order-summary .order-table .table-item {
-    text-align: left;
     width: 70%;
 }
 
 .order-summary .order-table td {
-    text-align: left;
-    font-family: 'Gilroy Light';
     padding-top: 20px;
 }
 
@@ -864,30 +729,23 @@ footer h3 {
     border-color: #484848;
 }
 
-.order-summary .total-table th {
-    text-align: left;
-}
-
 .order-summary .total-table .total-title {
-    text-align: left;
     width: 70%;
-    font-size: 0.7rem;
 }
 
 .order-summary .checkout {
     height: 50px;
     width: 150px;
-    background-color: #484848;
+    margin: 20px;
+    float: right;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    float: right;
 }
 
 .order-summary .checkout h6 {
     margin: 0;
-    color: white;
 }
 
 .order-summary .payment-info h1 {
@@ -897,6 +755,7 @@ footer h3 {
 .payment-info {
     width: 90%;
     margin: 0 auto;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -918,9 +777,7 @@ footer h3 {
 }
 
 .payment-method p{
-    font-family: 'Gilroy Light';
     margin: 0 10px;
-    font-size: 0.8rem;
 }
 
 .payment {
@@ -946,10 +803,11 @@ footer h3 {
 }
 
 .card-expiry-date {
-    display: flex;
-    flex-direction: column;
     width: 70%;
     margin: 0 10px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .card-expiry-date .date {
@@ -966,10 +824,11 @@ footer h3 {
 }
 
 .cvc {
-    display: flex;
-    flex-direction: column;
     width: 30%;
     margin: 0 10px;
+
+    display: flex;
+    flex-direction: column;
 }
     
 .cvc input {
@@ -979,7 +838,7 @@ footer h3 {
 .order-summary .shipping {
     height: 50px;
     width: 300px;
-    background-color: #484848;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -989,7 +848,6 @@ footer h3 {
 
 .order-summary .shipping h6 {
     margin: 0;
-    color: white;
 }
 
 
@@ -997,7 +855,6 @@ footer h3 {
 @media only screen and (max-width: 800px) {
 
     /* Header */
-
     header .JB-logo {
         height: 25px;
         margin: 0 20px 0 30px;
@@ -1025,7 +882,6 @@ footer h3 {
     .navelement h5 {
         width: 25%;
         margin: 0 auto;
-        text-align: center;
     }
 
     /* Filters */
@@ -1039,9 +895,6 @@ footer h3 {
         flex-wrap: wrap;
     }
 
-
-
-
     /* Product Cards */
     .product-cards {
         flex-direction: column;
@@ -1050,8 +903,6 @@ footer h3 {
     .product-card {
         max-width: none;
         height: 200px;
-        background-color: #FFFF00;
-        box-shadow: 5px 10px 10px #888888;
         display: flex;
         flex-direction: row;
     }
@@ -1063,11 +914,10 @@ footer h3 {
     .product-list .product-card {
         max-width: none;
         height: 200px;
-        background-color: #FFFF00;
-        box-shadow: 5px 10px 10px #888888;
+        margin: 30px auto 0;
+
         display: flex;
         flex-direction: row;
-        margin:30px auto 0;
     }
 
     .product-list .product-card .cart {
@@ -1080,7 +930,7 @@ footer h3 {
 
     .product-list .product-card h3 {
         margin: 10px;
-        font-size: 1.2em;
+
     }
 
     .product-list .product-card h4 {
@@ -1092,7 +942,6 @@ footer h3 {
         height: 100%;
         width: 200px;
         object-fit: cover;
-        background-color: white;
     }
 
     .product-card-price {
@@ -1101,9 +950,6 @@ footer h3 {
         flex-direction: column;
     }
 
-    .product-card h3 {
-        font-size: 1.5em;
-    }
 
     /* Mini-Product Listing */
     .mini-product-listing {
@@ -1142,7 +988,6 @@ footer h3 {
         height: 45%;
         width: 100%;
         position: absolute;
-        background-color: white;
         opacity: 70%;
         z-index: 60;
     }
@@ -1172,6 +1017,9 @@ footer h3 {
     }
 }
 
+
+
+
 @media only screen and (max-width: 560px) {
 
     /* Header */
@@ -1185,7 +1033,6 @@ footer h3 {
     }
 
 
-
     /* Navigation Bar */
     .topnav {
         max-width: 100%;
@@ -1194,11 +1041,12 @@ footer h3 {
     }
 }
 
-@media only screen and (max-width: 504px) {
-    /* Filters */
 
+
+@media only screen and (max-width: 504px) {
+
+    /* Filters */
     .filter {
         height: 215px;
     }
-    
 }
