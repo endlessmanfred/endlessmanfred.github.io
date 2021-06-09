@@ -230,7 +230,7 @@ footer h3 {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) and (min-width: 706px) {
 
     /* Navigation Bar */
     .navelement h5 {
@@ -246,11 +246,16 @@ footer h3 {
     .product-card h3 {
         font-size: 1.5em;
     }
+}
 
+@media only screen and (max-width: 706px) {
 
+    /* Product Card */
+    .product-list .product-card h3 {
+        font-size: 0.9em;
+    }
 
-
-
-
-
+    .product-list .product-card h4 {
+        font-size: 0.8em;
+    }
 }
