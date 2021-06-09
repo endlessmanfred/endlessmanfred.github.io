@@ -232,6 +232,11 @@ footer h3 {
 
 @media only screen and (max-width: 800px) and (min-width: 706px) {
 
+    /* Banner */
+    .banner-text {
+        font-size: 1.7rem;
+    }
+
     /* Navigation Bar */
     .navelement h5 {
         text-align: center;
@@ -250,6 +255,19 @@ footer h3 {
 
 @media only screen and (max-width: 706px) {
 
+    /* Banner */
+    .banner-text {
+        font-size: 1.7rem;
+    }
+
+    .small-1 h1, .small-2 h1, .small-3 h1, .small-4 h1 {
+        font-size: 0.7rem;
+    }
+
+    .product-banners .large h1 {
+        font-size: 1.5rem;
+    }
+
     /* Product Card */
     .product-list .product-card h3 {
         font-size: 0.9em;
@@ -257,5 +275,11 @@ footer h3 {
 
     .product-list .product-card h4 {
         font-size: 0.8em;
+    }
+
+    /* Footer */
+    .footer-contents h3 {
+        font-size: 0.6em;
+        text-align: center;
     }
 }

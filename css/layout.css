@@ -271,6 +271,7 @@ footer {
 footer h3 {
     display: inline;
     letter-spacing: 0.04rem;
+    margin: 0 30px;
 }
 
 
@@ -975,7 +976,6 @@ footer h3 {
 
     .product-list .product-card h3 {
         margin: 10px;
-
     }
 
     .product-list .product-card h4 {
@@ -1060,14 +1060,6 @@ footer h3 {
 
     .footer-contents h3 {
         margin: 10px 20px;
-    }
-}
-
-
-@media only screen and (max-width: 706) {
-    /* Product Card */
-    .product-list .product-card h3 {
-        font-size: 0.8em;
     }
 }
 
