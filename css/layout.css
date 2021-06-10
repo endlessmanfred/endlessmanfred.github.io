@@ -568,7 +568,7 @@ footer h3 {
 
 /* Shopping Cart */
 .checkout-white-box {
-    height: 82%;
+    height: 71%;
     width: 57%;
 
     position: absolute;
@@ -681,7 +681,7 @@ footer h3 {
     width: 40%;
     max-width: 500px;
     min-width: 370px;
-    height: 650px;
+    height: 715px;
 
     display: flex;
     flex-direction: column;
