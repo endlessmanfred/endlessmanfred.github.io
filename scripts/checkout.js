@@ -8,7 +8,7 @@ function validateAddress() {
     } else if ( postalcode == "") {
         alert( "Please fill in your postal code.");
     } else {
-        location.href = "[9]-checkout-shipping.html";
+        location.href = "[9]-checkout-payment.html";
     }
 }
 

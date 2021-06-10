@@ -226,6 +226,7 @@ footer h3 {
 .order-success p {
     font-family: 'Gilroy Light';
     font-size: 0.8rem;
+    text-align: center;
 }
 
 
@@ -280,6 +281,14 @@ footer h3 {
     /* Footer */
     .footer-contents h3 {
         font-size: 0.6em;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    /* Search Result - Mini Product Listing */
+    .mini-product-details .buttons h5 {
+        font-size: 0.78rem;
         text-align: center;
     }
 }
